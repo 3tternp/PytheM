@@ -1,4 +1,4 @@
-git+git://github.com/kti/python-netfilterqueue
+NetfilterQueue>=0.8.1; platform_system=="Linux"
 service-identity==16.0.0
 Twisted==16.3.0
 dnspython==1.14.0

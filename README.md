@@ -1,10 +1,8 @@
 # pythem - Penetration Testing Framework
 
 ![](https://img.shields.io/pypi/v/pythem.svg)
-![](https://img.shields.io/badge/python-2.7-blue.svg)
+![](https://img.shields.io/badge/python-3-blue.svg)
 ![](https://img.shields.io/badge/OS-GNU%2FLinux-000000.svg)
-![](https://img.shields.io/docker/automated/m4n3dw0lf/pythem.svg)
-![](https://img.shields.io/docker/build/m4n3dw0lf/pythem.svg)
 [![](https://img.shields.io/badge/donate-bitcoin-yellow.svg)](https://blockchain.info/address/1Eggia3JXwWiR4mkVqztionNUfs2N3ghAd)
 
 pythem is a multi-purpose pentest framework written in Python. It has been developed to be used by security researchers and security professionals. The tool intended to be used only for acts within the law. I am not liable for any undue and unlawful act practiced by this tool, for more information, read the license.
@@ -30,7 +28,7 @@ pythem is a multi-purpose pentest framework written in Python. It has been devel
 
 ```
 sudo apt-get update
-sudo apt-get install -y build-essential python-dev python-pip tcpdump python-capstone \
+sudo apt-get install -y build-essential python3-dev python3-pip tcpdump \
 libnetfilter-queue-dev libffi-dev libssl-dev
 ```
 
@@ -39,23 +37,23 @@ libnetfilter-queue-dev libffi-dev libssl-dev
 - With **pip**:
 
 ```
-sudo pip install pythem
+sudo pip3 install pythem
 ```
 
 - With **source**:
 
 ```
-git clone https://github.com/m4n3dw0lf/pythem
-cd pythem
-sudo python setup.py install
+git clone https://github.com/3tternp/PytheM
+cd PytheM
+sudo python3 setup.py install
 ```
 
 - With **source** and **pip**:
 ```
-git clone https://github.com/m4n3dw0lf/pythem
-cd pythem
-sudo python setup.py sdist
-sudo pip install dist/*
+git clone https://github.com/3tternp/PytheM
+cd PytheM
+sudo python3 setup.py sdist
+sudo pip3 install dist/*
 ```
 
 #### Running
@@ -66,6 +64,18 @@ sudo pip install dist/*
 $ sudo pythem
 ```
 
+- Run from source (Python 3):
+
+```
+$ python3 pythem.py
+```
+
+- Run optional web UI (Python 3):
+
+```
+$ python3 pythem.py --web
+```
+
 <br><br>
 
 ### Running as Docker container
@@ -73,7 +83,8 @@ $ sudo pythem
 - Requires Docker
 
 ```
-docker run -it --net=host --rm --name pythem m4n3dw0lf/pythem
+docker build -t pythem .
+docker run -it --net=host --rm --name pythem pythem
 ```
 
 <br><br>
