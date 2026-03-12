@@ -7,6 +7,11 @@
 
 pythem is a multi-purpose pentest framework written in Python. It has been developed to be used by security researchers and security professionals. The tool intended to be used only for acts within the law. I am not liable for any undue and unlawful act practiced by this tool, for more information, read the license.
 
+## Credits
+
+This repository is an upgraded/modernized version of the original PytheM project by Angelo Moura (m4n3dw0lf):
+https://github.com/m4n3dw0lf/pythem/
+
 
 ![](img/pythembg.png)
 
